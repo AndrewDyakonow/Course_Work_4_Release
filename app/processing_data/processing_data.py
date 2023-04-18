@@ -1,6 +1,6 @@
-from app.processing.class_json_processing import JsonProcessing
-from app.validation.validation_vacancies import Vacancies
-from app.validation.validation_vacancies_SJ import Vacancies_SJ
+from app.processing_json_file.class_json_processing import JsonProcessing
+from app.validation.validation_HH import Vacancies
+from app.validation.validation_SJ import Vacancies_SJ
 from pydantic import ValidationError
 
 

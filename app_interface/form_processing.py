@@ -1,13 +1,14 @@
 from tkinter import *
 from tkinter import scrolledtext
 from tkinter import ttk
-from app.procwssing_data.processing_data import ProcessingData
-from app.processing.class_json_processing import JsonProcessing
+from app.processing_data.processing_data import ProcessingData
+from app.processing_json_file.class_json_processing import JsonProcessing
 from app_interface.user_exception import ErrorServiceName, ErrorChoiceTag, ErrorNotData, ErrorNotDataForTop
 from tkinter.messagebox import showerror, showinfo
 
 
 class FormProcessing:
+    """Класс обработки формы"""
 
     def __init__(self, window, languages):
         self.window = window
@@ -45,6 +46,7 @@ class FormProcessing:
         return Button(self.window, text='Топ', width=6, command=self.button_top_click)
 
     def button_click(self):
+        """Метод обработки нажатия кнопки 'Запрос'"""
         self.output_field.delete(1.0, 'end')
         try:
             if self.choice_servis.get() == '':
@@ -68,6 +70,7 @@ class FormProcessing:
             showinfo(title="Вакансий нет", message="Отсутствуют вакансии по указанному ключевому слову")
 
     def button_top_click(self):
+        """Метод обработки нажатия кнопки 'ТОП'"""
         try:
             if self.list_vacancies is None:
                 raise ErrorNotDataForTop
@@ -84,6 +87,7 @@ class FormProcessing:
             showerror(title="Ошибка", message="Нет данных для сортировки!")
 
     def __print_vidget(self):
+        """Отрисовка виджетов на форме"""
         self.text_choise_servis.place(x=10, y=5)
         self.output_field.place(x=3, y=150)
         self.choice_servis.place(x=12, y=25, anchor=NW)
@@ -91,6 +95,3 @@ class FormProcessing:
         self.text_input_tag.place(x=12, y=70)
         self.button_request.place(x=475, y=80)
         self.button_top.place(x=475, y=120)
-
-
-
