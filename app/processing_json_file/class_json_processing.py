@@ -5,6 +5,7 @@ from app_interface.user_exception import ErrorServiceName
 
 
 class JsonProcessing:
+    """Класс для создания, заполнения и чтения файла"""
     Urls = 'side_file/result.json'
     json_file_name = 'side_file/result.json'
 
