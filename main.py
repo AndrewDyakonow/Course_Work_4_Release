@@ -1,8 +1,8 @@
-from app_interface.form import drow_form
+from app_dialog.utils_for_dialog import dialog_one
 
 
 def main():
-    drow_form()
+    dialog_one()
 
 
 if __name__ == '__main__':

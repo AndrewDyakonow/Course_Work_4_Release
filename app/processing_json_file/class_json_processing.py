@@ -1,7 +1,7 @@
 from app.requests_classes.HH_request_class.HH_class_request import HH_request
 from app.requests_classes.SJ_request_class.SJ_request_class import SJ_request
 import json
-from app_interface.user_exception import ErrorServiceName
+from app_dialog.user_exception import ErrorServiceName
 
 
 class JsonProcessing:
@@ -13,9 +13,9 @@ class JsonProcessing:
     def create_file(cls, text, servise_name) -> None:
         """Сохранение файлов в json"""
         with open(cls.json_file_name, 'w', encoding='utf-8') as file:
-            if servise_name == "Head Hunter":
+            if servise_name == "1":
                 ex_data = HH_request(text)
-            elif servise_name == "Super Job":
+            elif servise_name == "2":
                 ex_data = SJ_request(text)
             else:
                 raise ErrorServiceName

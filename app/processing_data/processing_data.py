@@ -12,10 +12,10 @@ class ProcessingData:
         """Создать список вакансий"""
         global parametr, objection
         vacancies_list = []
-        if choice_servis == "Super Job":
+        if choice_servis == "2":
             parametr = "objects"
             objection = Vacancies_SJ
-        elif choice_servis == "Head Hunter":
+        elif choice_servis == "1":
             parametr = 'items'
             objection = Vacancies
 
