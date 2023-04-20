@@ -36,13 +36,7 @@ ___
 
 ## Описание
 
-1. При запуске файла main.py происходит отрисовка формы
-![alt text](https://github.com/AndrewDyakonow/Course_Work_4_Release/blob/main/image_for_readme/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-04-18%2018-27-26.png)
-2. Далее необходимо выбрать ресурс для парсинга(Head Hunter или superjob), в противном случае ничего не получится
-![alt text](https://github.com/AndrewDyakonow/Course_Work_4_Release/blob/main/image_for_readme/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-04-19%2013-30-31.png)
-3. Потом требуется набрать ключевое слово или фразу для поиска и нажать кнопку "Запрос"
-![alt text](https://github.com/AndrewDyakonow/Course_Work_4_Release/blob/main/image_for_readme/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-04-19%2013-32-29.png)
-4. Если по ключевому слову или фразе вакансий не будет найдено, то выведется соответствующее сообщение
-![alt text](https://github.com/AndrewDyakonow/Course_Work_4_Release/blob/main/image_for_readme/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-04-19%2013-34-11.png)
-5. После получения вакансий, их можно отсортировать по зарплате, от большей к меньшей
-![alt text](https://github.com/AndrewDyakonow/Course_Work_4_Release/blob/main/image_for_readme/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-04-19%2013-34-51.png)
+1. При запуске файла main.py необходимо выбрать ресурс для парсинга(Head Hunter или Superjob), в противном случае ничего не получится
+2. Потом требуется набрать ключевое слово или фразу для поиска и нажать ENTER
+3. Если по ключевому слову или фразе вакансий не будет найдено, то выведется соответствующее сообщение
+4. После получения вакансий, их можно отсортировать по зарплате, от большей к меньшей
